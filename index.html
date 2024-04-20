@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+   <meta charset="UTF-8">
+   <title>Bhart tour</title>
+
+  <!-- Fontawesome CDN Link -->
+  
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!-- A.O.S Animation CDN Link -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <link rel="stylesheet" href="style.css">
+    </head>
+
+
+
+
+<body>
+  <div class="main-page">
+  
+    <nav class="navbar navbar-expand-lg " style="background-color: rgb(9, 9, 90); height: 75px;  position: fixed; width: 100%; z-index: 1;">
+      <div class="container-fluid">
+          <h2 href="#" style="color: white;">Bharat Tour</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item me-3">
+                      <a class="nav-link active fs-5" aria-current="page" href="#" style="color: white;">Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link fs-5" href="#tour" style="color: white;">Tours</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link fs-5" href="#hotels" style="color: white;">Hotel</a>
+                  </li>
+                  <li class="nav-item me-3">
+                      <a class="nav-link fs-5" href="#About" style="color: white;">About</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                      <a class="nav-link fs-5" href="#contactpage" style="color: white;">Contact</a>
+                  </li>
+
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link fs-5 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                        <img src="assets/iconimage/user.png" alt="login" width="30" height="35px">
+                    </a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown" >
+                        <li><a class="dropdown-item" href="./assets/login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="./assets/login2.html">Agent</a></li>
+                    </ul>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+
+  <section class="home">
+    <div class="heading">
+      <h1 >Find The Best Tours</h1>
+      <h1>In Bharat</h1>
+    </div>
+    <div class="state">
+      <form class="state2" >
+  <h2 id="font" >Choose a state:</h2>
+  <select  id="state" required  >
+  <option  selected disabled>Select State</option>
+            <option id="state" value="assets\Ap.html">Andhra Pradesh</option>
+            <option id="state" value="assets\Arunachal.html">Arunachal Pradesh</option>
+            <option id="state" value="assets\Assam.html">Assam</option>
+            <option id="state" value="assets\bihar.html">Bihar</option>
+            <option id="state" value="assets\CH.html">Chhattisgarh</option>
+            <option id="state" value="assets\goa.html">Goa</option>
+            <option id="state" value="assets\GJ.html">Gujarat</option>
+            <option id="state" value="assets\HR.html">Haryana</option>
+            <option id="state" value="assets\HP.html">Himachal Pradesh</option>
+            <option id="state" value="assets\Jammu.html">Jammu and Kashmir</option>
+            <option id="state" value="assets\JK.html">Jharkhand</option>
+            <option id="state" value="assets\KT.html">Karnataka</option>
+            <option id="state" value="assets\KL.html">Kerala</option>
+            <option id="state" value="assets\mp.html">Madhya Pradesh</option>
+            <option id="state" value="assets\MH.html">Maharashtra</option>
+            <option id="state" value="assets\MN.html">Manipur</option>
+            <option id="state" value="assets\ML.html">Meghalaya</option>
+            <option id="state" value="assets\MZ.html">Mizoram</option>
+            <option id="state" value="assets\NL.html">Nagaland</option>
+            <option id="state" value="assets\OS.html">Orissa</option>
+            <option id="state" value="assets\PB.html">Punjab</option>
+            <option id="state" value="assets\RJ.html">Rajasthan</option>
+            <option id="state" value="assets\SK.html">Sikkim</option>
+            <option id="state" value="assets\TN.html">Tamil Nadu</option>
+            <option id="state" value="assets\TL.html">Telangana</option>
+            <option id="state" value="assets\TR.html">Tripura</option>
+            <option id="state" value="assets\up.html">Uttar Pradesh</option>
+            <option id="state" value="assets\UK.html">Uttarakhand</option>
+            <option id="state" value="assets\WB.html">West Bengal</option>
+            <!-- Add more states as needed -->
+  </select>
+  
+  
+  </form>
+  </div>
+
+  <button type="button" onclick="redirect()" id="btn">Submit</button>
+  </section>
+ <!---------------------------------------- Tour  PAGE------------------------------------------------->
+   
+ <section class="tour p-2" id="tour">
+
+    <h2 id="heading" >Popular Tour In Bharat</h2>
+
+<div class="contanor">
+
+
+  <div class="card mb-3 p-2  " data-aos="fade-up"
+  data-aos-duration="1000"  style="width: 100%; background-color: rgb(241, 243, 236); color: black; ">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="assets/image/varanasi up 2.jpg" class="" alt="..." style="width: 100%; height: 40vh;">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title fs-1">Varanasi<br> <span style="font-size: 15px;"> For its Spiritual Essence</span></h5>
+                <p class="card-text">Exploration of India remains incomplete without a trip to the holy city of Varanasi in Uttar Pradesh. Also known as the city of Moksha (salvation), the place holds a great religious significance for the Hindus.Situated on the banks of sacred river Ganga. </p>
+                <div class="position-absolute bottom-0 end-0 p-3">
+                  <a href="assets/up.html" class="btn btn-primary btn-book-here"> Explorer Here</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card mb-3 p-2 " data-aos="fade-up"
+data-aos-duration="1000" style="width: 100%; background-color: rgb(241, 243, 236); color: black;">
+  <div class="row g-0">
+    
+      <div class="col-md-8">
+          <div class="card-body">
+              <h4 class="card-title fs-1">Jaisalmer<br> <span style="font-size: 15px;">For its Rajputana Magnificence and Plethora of Desert Activities</span></h4>
+              <p class="card-text">Also known as the Land of the Golden Sand, Jaisalmer in Rajasthan is a beautiful city known for its rich cultural heritage and tales of brave Rajput rulers.</p>
+              <div class="position-absolute bottom-0 start-0 p-3">
+                <a href="assets/RJ.html" class="btn btn-primary btn-book-here"> Explorer Here</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+        <img src="assets/image/jaisalmer 2 Rj.jpg" class="" alt="..." style="width: 100%; height: 40vh;">
+    </div>
+
+  </div>
+</div>
+
+
+<div class="card mb-3 p-2 " data-aos="fade-up"
+data-aos-duration="1000" style="width: 100%; background-color: rgb(241, 243, 236); color: black; ">
+<div class="row g-0">
+    <div class="col-md-4">
+        <img src="assets/image/kashmir 2.jpg" class="" alt="..." style="width: 100%; height: 40vh;">
+    </div>
+    <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title fs-1">Kashmir<br> <span style="font-size: 15px;">For its Captivating Natural Beauty</h5>
+            
+            <p class="card-text">One of the most incredible places in India, Kashmir is known for its natural beauty and is thus, rightly called Heaven on Earth. With its picturesque lakes, lush fruit orchards, verdant meadows, pines and deodars forests, all enclosed with mountains of Himalayan and Pir-Panjal ranges – Kashmir seems to have directly made its way right out from a postcard.</p>
+            <div class="position-absolute bottom-0 end-0 p-3">
+              <a href="assets/Jammu.html" class="btn btn-primary btn-book-here"> Explorer Here</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="card mb-3 p-2 " data-aos="fade-up"
+data-aos-duration="1000" style="width: 100%; background-color: rgb(241, 243, 236); color: black;">
+<div class="row g-0">
+ 
+  <div class="col-md-8">
+      <div class="card-body">
+          <h5 class="card-title fs-1">Ladakh<br> <span style="font-size: 15px;">For its Unmatched Adventure Options</h5>
+          
+          <p class="card-text">The land of high mountain passes, barren mountains, alpine lakes & meadows, enchanting valleys and ancient colourful Buddhist monasteries, Ladakh is one of the must-visit destinations in India.</p>
+          <div class="position-absolute bottom-0 start-0 p-3">
+            <a href="assets/Jammu.html" class="btn btn-primary btn-book-here"> Explorer Here</a>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <img src="assets/image/Ladakh2.jpg" class="" alt="..." style="width: 100%; height: 40vh;">
+</div>
+
+</div>
+</div>
+
+<div class="card mb-3 p-2 " data-aos="fade-up"
+data-aos-duration="1000" style="width: 100%; background-color:rgb(241, 243, 236); color:black; ">
+<div class="row g-0">
+<div class="col-md-4">
+    <img src="assets/image/sikkim-tourism2.jpg" class="" alt="..." style="width: 100%; height: 40vh;">
+</div>
+<div class="col-md-8">
+    <div class="card-body">
+        <h5 class="card-title fs-1">Sikkim<br> <span style="font-size: 15px;">For its Breathtaking Natural Vistas and Enthralling Adventures</h5>
+          <p class="card-text">One of the most beautiful places in India, Sikkim is a glittering gem of the North-East Himalayas. This northeast Indian destination is popular for being home to the world’s third highest mountain, Kanchenjunga (8586 m). Sikkim is one of the best destinations in India to spend a peaceful and laid back holiday as well as enjoy enthralling adventure activities.</p>
+          <div class="position-absolute bottom-0 end-0 p-3">
+            <a href="assets/SK.html" class="btn btn-primary btn-book-here"> Explorer Here</a>
+          </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+
+  </section>
+ <!------------------------------- hotel section----------------------->
+  <section class="hotel" id="hotels" >
+    <h2 id="heading" >Hotel In Bharat </h2>
+
+    <div class="hotel-container" >
+      <div class="hotel-image"   >
+          <img src="assets/image/tajhotel.jpeg" alt="Hotel Image" style="height: 400spx ;">
+      </div>
+      <div class="hotel-info">
+          <h1>Hotel Booking </h1>
+          <p>Namaste! Here we will find you the best hotels of bharat. We will facilitate you the best residents in the area of your visit.
+            We have searched the hotels for you that provide you 24/7 service,comfortable stay and memorable stay.
+          We are thrilled to have you as our returning guest and are honored that you have chosen to stay with us again. </p>
+          <a href="https://www.booking.com/index.en-gb.html?aid=2369666&pagename=en-in-booking-desktop&label=msn-oH8CvzV9uPdYNG2MAs5kFw-80814291883323:tikwd-80814466675899:loc-90:neo:mte:lp1666:dec:qshotels%20booking%20&utm_campaign=English_India%20EN%20IN&utm_medium=cpc&utm_source=bing&utm_term=oH8CvzV9uPdYNG2MAs5kFw&msclkid=073f5417497715df83db3207bb34ca88&utm_content=Booking%20-%20Desktop" class="btn btn-primary btn-book-here">Explore Here</a>
+      </div>
+  </div>
+
+
+  </section>
+
+  <!------------------------------- About page section----------------------->
+
+  <section class="About" id="About">
+
+    <h2 id="heading" >About</h2>
+
+    <div class="hotel-container">
+
+    
+      <div class="hotel-info">
+          <h1>About Tours</h1>
+          <p>Welcome to our Bharat tours! We specialize in providing unforgettable experiences to our guests. Explore hidden gems with expert guides, enjoy local cuisine, and immerse yourself in the culture. Our tours are designed for those who seek adventure, knowledge, and a bit of luxury.</p>
+          <a href="assets\about.html" class="btn btn-primary btn-book-here">Explore More</a>
+      </div>
+
+      <div class="hotel-image"  >
+        <img src="assets/image/bharat toure.jpg.png" alt="About Image">
+    </div>
+     
+  </div>
+  </section>
+
+  <!------------------------------- contact page section----------------------->
+
+  <section class="contactpage" id="contactpage">
+    <h2 id="heading">Contact</h2>
+    <div class="contact" id="contact">
+      <div class="contact-form">
+        <h1>Contact <span class="us">Us</span></h1>
+        <p>
+          I am available for freelance work. Connect with me via phone: 8839888489
+          or email: bharattour@gmail.com
+        </p>
+        <form class="form-contact" id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="E-mail" required />
+          <input type="text" name="subject" placeholder="Write your subject" required />
+          <textarea name="message" cols="30" rows="10" placeholder="Your Messages" required></textarea>
+          <input type="submit" value="Submit" class="btns" />
+        </form>
+      </div>
+      <div class="map-image">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.2331423817855!2d77.09090946487801!3d22.34482403530042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397d712f3ad74f57%3A0x7c6f4489781a5494!2sNehru%20Stadium%2C%20Harda%2C%20Madhya%20Pradesh%20461331!5e0!3m2!1sen!2sin!4v1670485604596!5m2!1sen!2sin"
+          width="90%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+      </div>
+    </div>
+</section>
+
+  <!------------------------------- footer section----------------------->
+
+<section class="footerpage">
+
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-3"
+             style="background-color: #6351ce"
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+        
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class=" me-4 text-decoration-none" >
+         <img src="assets/iconimage/facebook.png" alt="" width="30" height="30">
+        </a>
+        <a href="" class=" me-4 text-decoration-none">
+          <img src="assets/iconimage/twitter.png" alt="" width="30" height="30">
+        </a>
+        <a href="" class=" me-4 text-decoration-none">
+          <img src="assets/iconimage/instagram.png" alt="" width="30" height="30">
+        </a>
+        <a href="" class=" me-4 text-decoration-none">
+          <img src="assets/iconimage/telegram.png" alt="" width="30" height="30">
+        </a>
+       
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Bharat Tour  </h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Bharat is a land of various cultures and a rich heritage. It is the seventh-largest country by area and the second-most populous country globally.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Social Media</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Facebook</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Twitter</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Instragram</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">telegram</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="../HtmlFolder/index.html#" class="text-white">Home</a>
+            </p>
+            <p>
+              <a href="#hotels" class="text-white">Hotel</a>
+            </p>
+            <p>
+              <a href="#tour" class="text-white">Tour</a>
+            </p>
+            <p>
+              <a href="#About" class="text-white">About</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i>Harda Madhya Pradesh 461331</p>
+            <p><i class="fas fa-envelope mr-3"></i>bharattour@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i>7772959016</p>
+            <p><i class="fas fa-print mr-3"></i>8839888489</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2024 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >bharattour.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</section>
+
+  </div>
+ 
+
+<script>
+ function redirect() {
+      var selectedOption = document.getElementById("state").value;
+      if (selectedOption) {
+        window.location.href = selectedOption;
+      }
+    }
+  
+  
+  
+  
+  // Redirect to the corresponding URL for each selected option
+  selectedOptions.forEach(function(state) {
+    var url = redirectUrls[state];
+    if (url) {
+      window.open(url, "_blank"); // Open each URL in a new tab/window
+    }
+  });
+ 
+  
+
+
+</script>
+
+
+  </body>
+
+  <script>
+    AOS.init();
+  </script>
+
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();  // Prevent the default form submit action
+      var formData = new FormData(this);
+  
+      // Convert formData to a plain object //
+      var plainFormData = Object.fromEntries(formData.entries());
+      var formDataJsonString = JSON.stringify(plainFormData);
+  
+      fetch('https://656b20fadac3630cf727baa7.mockapi.io/crud-form', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+          },
+          body: formDataJsonString
+      })
+      .then(response => response.json())
+      .then(data => {
+          console.log(data);
+        
+          // Clear the form fields after successful submission
+            document.getElementById('contactForm').reset();
+// alert message thein subbmit //
+            alert('Message sent successfully');
+          
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          alert('Error sending message');
+      });
+  });
+  </script>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data Page</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Booking Data</h1>
+    <table id="data-table">
+        
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Number</th>
+                <th>State</th>
+                 <th>Date</th>
+                <th>People</th>
+                <th>Pickup</th>
+                <th>Guidance</th>
+                <th>City</th>
+                <th>Action</th>
+            
+            </tr>
+        </thead>
+        <tbody id="data-container">
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetchData();
+        });
+
+        function fetchData() {
+            fetch('https://656b20fadac3630cf727baa7.mockapi.io/crud-form')
+            .then(response => response.json())
+            .then(data => {
+                displayData(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error fetching data');
+            });
+        }
+
+          
+
+        function displayData(data) {
+            var dataBody = document.getElementById('data-container');
+            dataBody.innerHTML = ''; // Clear previous data //
+
+            if (data.length === 0) {
+                var newRow = dataBody.insertRow();
+                var cell = newRow.insertCell();
+                cell.colSpan = 8;
+                cell.textContent = 'No data available';
+                return;
+            }
+
+            data.forEach(item => {
+                var newRow = dataBody.insertRow();
+                newRow.insertCell().textContent = item.name;
+                newRow.insertCell().textContent = item.mobile;
+                newRow.insertCell().textContent = item.state;
+                newRow.insertCell().textContent = item.date;
+                newRow.insertCell().textContent = item.people;
+                newRow.insertCell().textContent = item.pickup;
+                newRow.insertCell().textContent = item.guidance;
+                newRow.insertCell().textContent = item.selectedCities;
+               
+                var deleteCell = newRow.insertCell();
+                var deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', function() {
+                    deleteRow(item.id);
+                });
+                deleteCell.appendChild(deleteButton);
+            
+             
+            });
+        }
+
+        function deleteRow(id) {
+            fetch(`https://656b20fadac3630cf727baa7.mockapi.io/crud-form/${id}`, {
+                method: 'DELETE'
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to delete data');
+                }
+                return response.json();
+            })
+            .then(() => {
+                fetchData(); // Refresh data after deletion
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error deleting data');
+            });
+        }
+    </script>
+</body>
+</html>

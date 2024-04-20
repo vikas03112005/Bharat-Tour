@@ -1,0 +1,55 @@
+.contanor {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 352px);
+  gap: 40px;
+  background-color: black;
+  /* align-content: stretch;  */
+  /* border: solid red 2px ; */
+}
+
+.card {
+  /* margin-bottom: 20px; Adds space between cards */
+  height: 100%; 
+  color:white;
+  background-color:rgb(43, 43, 43) ;
+  box-shadow: 0 4px 8px rgba(245, 244, 243, 0.623);
+
+}
+
+.card-img-top {
+  height: 250px; /* Adjust the height as needed */
+  object-fit: cover;
+  border: 2px solid #636363
+}
+
+.card-text {
+  overflow: auto;
+  font-weight:600;
+
+}
+.navbar{
+  width: 100%;
+  height: 60px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* nav bar */
+
+
+
+
